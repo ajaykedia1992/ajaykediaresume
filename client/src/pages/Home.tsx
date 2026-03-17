@@ -1,25 +1,43 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
-
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+/*
+ * STELLAR BLACK — Home Page
+ * Ultra-premium Netflix-inspired resume for Ajay Kedia
+ * Sections: Hero → Featured → Experience → Skills → Education → Achievements → Footer
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+import StarField from "@/components/StarField";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import FeaturedSection from "@/components/FeaturedSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import SkillsSection from "@/components/SkillsSection";
+import EducationSection from "@/components/EducationSection";
+import AchievementsSection from "@/components/AchievementsSection";
+import UltraPrimeFeatures from "@/components/UltraPrimeFeatures";
+import Footer from "@/components/Footer";
 
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+    <div
+      className="min-h-screen"
+      style={{ background: "#050810", color: "#F0EDE8", overflowX: "hidden" }}
+    >
+      {/* Animated star field background */}
+      <StarField />
+
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Main content */}
+      <main style={{ position: "relative", zIndex: 1 }}>
+        <HeroSection />
+        <FeaturedSection />
+        <ExperienceSection />
+        <SkillsSection />
+        <UltraPrimeFeatures />
+        <EducationSection />
+        <AchievementsSection />
       </main>
+
+      <Footer />
     </div>
   );
 }
