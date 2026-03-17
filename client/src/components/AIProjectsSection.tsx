@@ -3,7 +3,7 @@
  * Full showcase of all Meta projects across 4 categories:
  * 🤖 AI & Agentic  |  💰 Revenue & Attribution  |  ⚖️ Legal & Compliance  |  🚀 Product Innovation
  */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Project {
   id: string;
@@ -762,6 +762,20 @@ export default function AIProjectsSection() {
     const cat = categories.find((c) => c.id === catId)!;
     setActiveProjectId(cat.projects[0].id);
   };
+
+  // Listen for external navigation events from CommandPalette
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const { categoryId, projectId } = (e as CustomEvent).detail;
+      setActiveCategoryId(categoryId);
+      setActiveProjectId(projectId);
+      setTimeout(() => {
+        document.getElementById("meta-projects")?.scrollIntoView({ behavior: "smooth" });
+      }, 50);
+    };
+    window.addEventListener("select-meta-project", handler);
+    return () => window.removeEventListener("select-meta-project", handler);
+  }, []);
 
   return (
     <section
