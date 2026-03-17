@@ -1,23 +1,53 @@
 /*
  * STELLAR BLACK — FeaturedSection Component
  * Netflix-style hero banner for current/featured role (Meta)
- * Full-width cinematic card with tech background, role details, tags
+ * Updated with AI project highlights: analytics agent, Metamate, Manus, GenAI video tool
  */
 import { useState } from "react";
 
 const META_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663345648637/USHtrkGwNZBa9PVUFF9jTx/meta-card-bg-EQZUMgkvFZTxcEjhxfKD4e.webp";
 
 const highlights = [
-  "Real-time API Debugging",
-  "Facebook & Instagram Ads",
-  "Cross-functional Leadership",
-  "Business Solutions Architecture",
-  "Performance Analytics",
+  "Analytics Agent Recipes",
+  "Metamate Automation",
+  "Manus Framework",
+  "GenAI Video Generation",
+  "Catalog Manager Scaling",
+  "Dynamic Ads Revenue",
+  "API Debugging",
   "Meta Ads Ecosystem",
+];
+
+const aiProjects = [
+  {
+    icon: "🤖",
+    title: "Analytics Agent Recipes",
+    color: "#A78BFA",
+    desc: "Built intelligent analytics agent recipes that automate data pipeline orchestration, surface actionable insights from ad performance signals, and generate natural-language summaries for business stakeholders.",
+  },
+  {
+    icon: "⚡",
+    title: "Metamate Automation",
+    color: "#4F8EF7",
+    desc: "Engineered Metamate-powered automation workflows to accelerate internal tooling, reduce manual review cycles, and intelligently route support tickets using LLM-based classification.",
+  },
+  {
+    icon: "🧩",
+    title: "Manus Framework Integration",
+    color: "#34D399",
+    desc: "Leveraged the Manus agentic framework to orchestrate multi-step business workflows — from client onboarding to ad creative review — enabling autonomous task execution with human-in-the-loop checkpoints.",
+  },
+  {
+    icon: "🎬",
+    title: "GenAI Video Generation Tool",
+    color: "#C8A96E",
+    desc: "Created a GenAI-powered video generation tool integrated with Catalog Manager, enabling dynamic ad creatives at scale. Drove measurable Meta revenue lift through automated, personalized video ads for dynamic product catalogs.",
+  },
 ];
 
 export default function FeaturedSection() {
   const [expanded, setExpanded] = useState(false);
+  const [activeProject, setActiveProject] = useState<number | null>(null);
 
   return (
     <section id="featured" className="relative py-8" style={{ background: "#050810" }}>
@@ -61,12 +91,12 @@ export default function FeaturedSection() {
               opacity: 0.4,
             }}
           />
-
           {/* Gradient overlay */}
           <div
             className="absolute inset-0"
             style={{
-              background: "linear-gradient(to right, rgba(10,15,30,0.98) 0%, rgba(10,15,30,0.7) 60%, rgba(10,15,30,0.2) 100%)",
+              background:
+                "linear-gradient(to right, rgba(10,15,30,0.98) 0%, rgba(10,15,30,0.7) 60%, rgba(10,15,30,0.2) 100%)",
             }}
           />
 
@@ -144,9 +174,9 @@ export default function FeaturedSection() {
                 marginBottom: "1.5rem",
               }}
             >
-              Leading real-time technical troubleshooting, API debugging, and integration support
-              for Facebook and Instagram ads. Driving business innovation through cross-functional
-              collaboration and strategic solution delivery.
+              Leading real-time technical troubleshooting, API debugging, and AI-powered innovation
+              for Facebook and Instagram ads. Built GenAI tools, agentic automation frameworks, and
+              video generation pipelines that directly drive Meta's advertising revenue.
             </p>
 
             {/* Highlights */}
@@ -176,12 +206,8 @@ export default function FeaturedSection() {
                   cursor: "pointer",
                   transition: "all 0.2s ease",
                 }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.15)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.1)";
-                }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.15)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.1)"; }}
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10" />
@@ -222,13 +248,15 @@ export default function FeaturedSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[
                     "Lead real-time technical troubleshooting and API debugging",
-                    "Designed and maintained software applications for diverse businesses",
-                    "Provided technical support for clients with complex needs",
+                    "Built analytics agent recipes for automated insight generation",
+                    "Engineered Metamate automation for internal workflow acceleration",
+                    "Integrated Manus framework for agentic business task orchestration",
+                    "Created GenAI video generation tool for dynamic catalog ads",
+                    "Scaled Catalog Manager to boost Meta dynamic ads revenue",
                     "Gathered client requirements through workshops",
                     "Conducted code reviews to ensure best practices",
                     "Analyzed user data to identify trends for product development",
                     "Configured Meta ads ecosystem per best practice guidelines",
-                    "Documented common problems and maintained knowledge base",
                   ].map((item, i) => (
                     <div
                       key={i}
@@ -251,7 +279,7 @@ export default function FeaturedSection() {
 
           {/* Right side: tenure badge */}
           <div
-            className="absolute right-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-3"
+            className="absolute right-8 top-8 hidden lg:flex flex-col items-center gap-3"
             style={{ zIndex: 10 }}
           >
             <div
@@ -260,7 +288,8 @@ export default function FeaturedSection() {
                 height: "100px",
                 borderRadius: "50%",
                 border: "2px solid transparent",
-                background: "linear-gradient(#0A0F1E, #0A0F1E) padding-box, linear-gradient(135deg, #C8A96E, #4F8EF7) border-box",
+                background:
+                  "linear-gradient(#0A0F1E, #0A0F1E) padding-box, linear-gradient(135deg, #C8A96E, #4F8EF7) border-box",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -302,6 +331,116 @@ export default function FeaturedSection() {
             >
               TENURE
             </span>
+          </div>
+        </div>
+
+        {/* AI Projects mini-cards row */}
+        <div className="mt-6">
+          <div className="flex items-center gap-3 mb-4">
+            <span
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                fontSize: "0.65rem",
+                letterSpacing: "0.25em",
+                color: "#A78BFA",
+                fontWeight: 700,
+                textTransform: "uppercase",
+              }}
+            >
+              ✦ AI INITIATIVES AT META
+            </span>
+            <div
+              style={{
+                flex: 1,
+                height: "1px",
+                background: "linear-gradient(to right, rgba(167,139,250,0.4), transparent)",
+              }}
+            />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {aiProjects.map((proj, i) => (
+              <div
+                key={i}
+                onClick={() => setActiveProject(activeProject === i ? null : i)}
+                style={{
+                  background:
+                    activeProject === i
+                      ? `linear-gradient(135deg, ${proj.color}18, ${proj.color}06)`
+                      : "rgba(255,255,255,0.025)",
+                  border: `1px solid ${activeProject === i ? proj.color + "50" : "rgba(255,255,255,0.07)"}`,
+                  borderRadius: "10px",
+                  padding: "1.25rem",
+                  cursor: "pointer",
+                  transition: "all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+                  transform: activeProject === i ? "translateY(-4px)" : "translateY(0)",
+                  boxShadow:
+                    activeProject === i
+                      ? `0 16px 40px rgba(0,0,0,0.4), 0 0 20px ${proj.color}20`
+                      : "none",
+                }}
+                onMouseEnter={(e) => {
+                  if (activeProject !== i) {
+                    (e.currentTarget as HTMLElement).style.background = `${proj.color}0D`;
+                    (e.currentTarget as HTMLElement).style.borderColor = `${proj.color}30`;
+                    (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (activeProject !== i) {
+                    (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.025)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.07)";
+                    (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                  }
+                }}
+              >
+                <div style={{ fontSize: "1.6rem", marginBottom: "0.6rem" }}>{proj.icon}</div>
+                <div
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: "0.72rem",
+                    fontWeight: 700,
+                    color: proj.color,
+                    letterSpacing: "0.04em",
+                    marginBottom: "0.4rem",
+                    lineHeight: 1.3,
+                  }}
+                >
+                  {proj.title}
+                </div>
+                <div
+                  style={{
+                    maxHeight: activeProject === i ? "200px" : "0px",
+                    overflow: "hidden",
+                    transition: "max-height 0.4s ease",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "'Manrope', sans-serif",
+                      fontSize: "0.76rem",
+                      color: "rgba(240, 237, 232, 0.6)",
+                      lineHeight: 1.65,
+                      marginTop: "0.5rem",
+                    }}
+                  >
+                    {proj.desc}
+                  </p>
+                </div>
+                {activeProject !== i && (
+                  <div
+                    style={{
+                      fontFamily: "'Space Grotesk', sans-serif",
+                      fontSize: "0.6rem",
+                      color: "rgba(136,146,164,0.45)",
+                      marginTop: "0.3rem",
+                      letterSpacing: "0.08em",
+                    }}
+                  >
+                    TAP TO EXPAND
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
