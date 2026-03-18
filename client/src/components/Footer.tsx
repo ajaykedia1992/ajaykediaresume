@@ -107,7 +107,7 @@ export default function Footer() {
             letterSpacing: "0.05em",
           }}
         >
-          STELLAR BLACK · ULTRA PRIME · 2026
+          STELLAR BLACK · 2026
         </div>
       </div>
     </footer>

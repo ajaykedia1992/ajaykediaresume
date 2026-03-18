@@ -384,7 +384,7 @@ export default function CommandPalette() {
               letterSpacing: "0.1em",
             }}
           >
-            STELLAR BLACK · ULTRA PRIME
+            STELLAR BLACK
           </span>
         </div>
       </div>

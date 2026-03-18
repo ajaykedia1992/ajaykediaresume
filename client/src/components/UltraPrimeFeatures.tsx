@@ -414,7 +414,7 @@ export default function UltraPrimeFeatures() {
         {/* Header */}
         <div className="flex items-center gap-4 mb-10">
           <div>
-            <span className="section-label">ULTRA PRIME EXCLUSIVE</span>
+            <span className="section-label">INTERACTIVE FEATURES</span>
             <h2
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
@@ -424,7 +424,7 @@ export default function UltraPrimeFeatures() {
                 marginTop: "0.25rem",
               }}
             >
-              Features Beyond Netflix
+              Career Intelligence Hub
             </h2>
           </div>
           <div className="neon-line flex-1" />
@@ -441,7 +441,7 @@ export default function UltraPrimeFeatures() {
               letterSpacing: "0.1em",
             }}
           >
-            ✦ ULTRA PRIME
+            ❖ STELLAR BLACK
           </div>
         </div>
 

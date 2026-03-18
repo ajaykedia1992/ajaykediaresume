@@ -88,7 +88,7 @@ export default function Navbar() {
                 textTransform: "uppercase",
               }}
             >
-              ULTRA PRIME
+              BUSINESS ENGINEER
             </div>
           </div>
         </div>
