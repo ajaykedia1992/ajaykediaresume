@@ -145,7 +145,7 @@ export default function FeaturedSection() {
                 marginBottom: "1rem",
               }}
             >
-              Business Engineer
+              Forward Deployed Engineer(BE)
             </h2>
 
             {/* Location */}
