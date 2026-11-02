@@ -306,7 +306,7 @@ export default function FeaturedSection() {
                   lineHeight: 1,
                 }}
               >
-                5+
+                7+
               </span>
               <span
                 style={{
