@@ -11,7 +11,7 @@ const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663345648637/USHtrk
 const PROFILE_GLOW = "https://d2xsxph8kpxj0f.cloudfront.net/310519663345648637/USHtrkGwNZBa9PVUFF9jTx/profile-glow-PRq3erQFfHDpRQbTFWLghF.webp";
 
 const stats = [
-  { value: 10, suffix: "+", label: "Years Experience" },
+  { value: 11, suffix: "+", label: "Years Experience" },
   { value: 7, suffix: "", label: "Companies" },
   { value: 30, suffix: "M+", label: "Products Scaled" },
   { value: 4, suffix: "", label: "Countries" },
