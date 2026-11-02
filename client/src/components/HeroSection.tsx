@@ -379,8 +379,7 @@ export default function HeroSection() {
         >
           {/* Profile glow image */}
           <div className="relative flex items-center justify-center">
-            <img
-              src={PROFILE_GLOW}
+            <div
               alt="Profile glow"
               className="float-anim"
               style={{
