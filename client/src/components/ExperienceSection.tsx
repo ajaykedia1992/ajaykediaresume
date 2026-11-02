@@ -11,7 +11,7 @@ const experiences = [
     role: "Forward Delployed Engineer (BE)",
     period: "Mar 2020 — Present",
     location: "Seattle, WA",
-    duration: "5+ yrs",
+    duration: "7+ yrs",
     color: "#4F8EF7",
     bgGradient: "linear-gradient(135deg, rgba(79,142,247,0.15) 0%, rgba(79,142,247,0.03) 100%)",
     borderColor: "rgba(79,142,247,0.3)",
