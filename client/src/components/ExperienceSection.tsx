@@ -8,7 +8,7 @@ import { useRef, useState } from "react";
 const experiences = [
   {
     company: "Meta Platforms Inc.",
-    role: "Business Engineer",
+    role: "Forward Delployed Engineer (BE)",
     period: "Mar 2020 — Present",
     location: "Seattle, WA",
     duration: "5+ yrs",
