@@ -52,7 +52,7 @@ function AnimatedCounter({ target, suffix, duration = 2000 }: { target: number; 
   );
 }
 
-const roles = ["Business Engineer", "Software Architect", "Data Scientist", "Tech Innovator"];
+const roles = ["Forward Deployed Engineer(BE)", "Software Engineer", "Data Scientist", "Tech Innovator"];
 
 export default function HeroSection() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -240,7 +240,7 @@ export default function HeroSection() {
               marginBottom: "2.5rem",
             }}
           >
-            Results-driven professional with over 10 years of experience in business engineering,
+            Results-driven professional with over 11 years of experience in business engineering,
             software development, and data science. Currently leading technical innovation at{" "}
             <span style={{ color: "#4F8EF7", fontWeight: 600 }}>Meta Platforms</span>.
           </p>
