@@ -12,9 +12,9 @@ import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer, Tool
 
 // AI Career Spotlight
 const qaData = [
-  { q: "What is Ajay's current role?", a: "Ajay is a Business Engineer at Meta Platforms Inc. in Seattle, WA, where he has been since March 2020. He leads real-time technical troubleshooting, API debugging, and integration support for Facebook and Instagram ads." },
+  { q: "What is Ajay's current role?", a: "Ajay is a Forward Deployed Engineer (BE) at Meta Platforms Inc. in Seattle, WA, where he has been since March 2020. He leads real-time technical troubleshooting, API debugging, and integration support for Facebook and Instagram ads." },
   { q: "What are Ajay's top technical skills?", a: "Ajay's core stack includes Java, Python, React, GraphQL, AWS, Docker, and Kubernetes. He also has deep expertise in ML/AI with TensorFlow, OpenAI, and LLAMA, plus the full Meta ads ecosystem." },
-  { q: "What makes Ajay unique?", a: "Ajay uniquely bridges business and engineering — he combines 10+ years of software development with data science expertise and deep knowledge of the Meta advertising platform. He's a Kaggle competition winner and has scaled systems handling 30M+ products." },
+  { q: "What makes Ajay unique?", a: "Ajay uniquely bridges business and engineering — he combines 11+ years of software development with data science expertise and deep knowledge of the Meta advertising platform. He's a Kaggle competition winner and has scaled systems handling 30M+ products." },
   { q: "What is Ajay's educational background?", a: "Ajay holds an MS in Computer Science from the University of Colorado Boulder (2017-2019), specializing in NLP, Computer Vision, and Machine Learning. He completed his B.Tech in IT from VIT University, India (2011-2015)." },
   { q: "Where has Ajay worked?", a: "Ajay has worked at Meta (current), Proofpoint, Rakuten (Data Science intern), University of Colorado (TA), Morgan Stanley, Snapdeal, and Trimble Inc. — spanning USA and India across 10+ years." },
 ];
