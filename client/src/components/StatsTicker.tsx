@@ -5,9 +5,9 @@
  */
 
 const tickerItems = [
-  { label: "YEARS EXPERIENCE", value: "10+", color: "#C8A96E" },
+  { label: "YEARS EXPERIENCE", value: "11+", color: "#C8A96E" },
   { label: "COMPANIES", value: "7", color: "#4F8EF7" },
-  { label: "META PROJECTS", value: "12", color: "#A78BFA" },
+  { label: "META PROJECTS", value: "16", color: "#A78BFA" },
   { label: "PRODUCTS SCALED", value: "30M+", color: "#34D399" },
   { label: "COUNTRIES", value: "4", color: "#F472B6" },
   { label: "TECHNOLOGIES", value: "35+", color: "#60A5FA" },
